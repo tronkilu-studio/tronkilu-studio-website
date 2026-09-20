@@ -1,7 +1,0 @@
-:root{
-/* Grain has no soft drop shadows. Elevation is expressed as an offset hard edge. */
---shadow-none:none;
---shadow-offset:3px 3px 0 var(--ink-900);
---shadow-offset-lg:6px 6px 0 var(--ink-900);
---shadow-overlay:0 0 0 1px var(--ink-900);
---scrim:rgba(0,0,0,0.72)}
