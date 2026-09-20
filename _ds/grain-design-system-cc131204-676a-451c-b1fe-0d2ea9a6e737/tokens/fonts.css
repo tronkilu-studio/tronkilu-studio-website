@@ -1,0 +1,4 @@
+/* Grain loads its two typefaces from the Google Fonts CDN (see the @import at the top of styles.css).
+   Archivo = core grotesque. IBM Plex Mono = labels, metadata, code.
+   Substitution note: no brand font files were supplied; these are the Google Fonts stand-ins. */
+:root{--font-core:'Archivo','Helvetica Neue',Helvetica,Arial,sans-serif;--font-mono:'IBM Plex Mono','SF Mono',Menlo,monospace}

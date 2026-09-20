@@ -1,0 +1,5 @@
+:root{
+--hairline:1px;--rule:1px;--rule-heavy:2px;
+--border-1:var(--hairline) solid var(--border-hairline);
+--border-strong-1:var(--hairline) solid var(--border-strong);
+--radius-0:0px;--radius-1:2px;--radius-2:3px;--radius-pill:999px;--radius:var(--radius-0)}
