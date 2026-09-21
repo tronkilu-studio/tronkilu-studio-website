@@ -17,10 +17,46 @@
 <meta name="twitter:title" content="tronkilu.studio — Ergi Shkëlzeni">
 <meta name="twitter:description" content="Visual designer and illustrator based in Grenoble, France.">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ergi Shkëlzeni","alternateName":"Tronkilu","url":"https://tronkilu.studio/","jobTitle":"Visual Designer and Illustrator","address":{"@type":"PostalAddress","addressLocality":"Grenoble","addressCountry":"FR"},"sameAs":["https://www.linkedin.com/in/ergishkëlzeni"]}</script>
-<link rel="stylesheet" href="_ds/grain-design-system-cc131204-676a-451c-b1fe-0d2ea9a6e737/tokens/colors.css">
-<link rel="stylesheet" href="_ds/grain-design-system-cc131204-676a-451c-b1fe-0d2ea9a6e737/tokens/spacing.css">
-<link rel="stylesheet" href="_ds/grain-design-system-cc131204-676a-451c-b1fe-0d2ea9a6e737/tokens/motion.css">
-<link rel="stylesheet" href="_ds/grain-design-system-cc131204-676a-451c-b1fe-0d2ea9a6e737/tokens/effects.css">
+<style>
+:root{
+/* Ink — the only real colour in the system */
+--ink-900:#000000;--ink-800:#101010;--ink-700:#1c1c1c;--ink-600:#3a3a3a;--ink-500:#5e5e5e;--ink-400:#8a8a8a;--ink-300:#b4b4b4;--ink-200:#d6d6d6;--ink-100:#e8e8e8;--ink-050:#f2f2f1;--paper:#ffffff;
+/* Semantic */
+--text-primary:var(--ink-900);--text-secondary:var(--ink-500);--text-muted:var(--ink-400);--text-inverse:var(--paper);
+--surface-page:var(--paper);--surface-card:var(--paper);--surface-sunken:var(--ink-050);--surface-inverse:var(--ink-900);
+--border-hairline:var(--ink-200);--border-strong:var(--ink-900);--border-subtle:var(--ink-100);
+--action-fill:var(--ink-900);--action-fill-hover:var(--ink-700);--action-text:var(--paper);
+--focus-ring:var(--ink-900);
+/* Semantic status: expressed as ink + pattern, never hue. Kept as aliases so consumers
+   have a single place to opt into colour if a product ever needs it. */
+--status-info:var(--ink-900);--status-success:var(--ink-900);--status-warning:var(--ink-900);--status-danger:var(--ink-900);
+--selection-bg:var(--ink-900);--selection-text:var(--paper)}
+[data-theme="inverse"]{--text-primary:var(--paper);--text-secondary:var(--ink-300);--text-muted:var(--ink-400);--text-inverse:var(--ink-900);--surface-page:var(--ink-900);--surface-card:var(--ink-900);--surface-sunken:var(--ink-800);--surface-inverse:var(--paper);--border-hairline:var(--ink-600);--border-strong:var(--paper);--border-subtle:var(--ink-700);--action-fill:var(--paper);--action-fill-hover:var(--ink-100);--action-text:var(--ink-900);--focus-ring:var(--paper)}
+
+:root{
+--space-0:0px;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:24px;--space-6:32px;--space-7:48px;--space-8:64px;--space-9:96px;--space-10:128px;
+--gutter:24px;--page-margin:32px;--section-y:96px;--max-width:1280px;--rail:280px}
+
+:root{
+--ease-standard:cubic-bezier(0.2,0,0,1); /* @kind other */
+--ease-out:cubic-bezier(0,0,0,1); /* @kind other */
+--ease-step:steps(3,end); /* @kind other */
+--dur-instant:80ms; /* @kind other */
+--dur-fast:120ms; /* @kind other */
+--dur-base:180ms; /* @kind other */
+--dur-slow:320ms /* @kind other */}
+
+:root{
+/* Grain: a tiled SVG fractal-noise mask. Applied as an ::after overlay, never baked into art. */
+--grain-url:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E"); /* @kind other */
+--grain-opacity:0.28; /* @kind other */
+--grain-opacity-strong:0.45; /* @kind other */
+--grain-size:160px; /* @kind spacing */
+--halftone-url:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6'%3E%3Ccircle cx='1.5' cy='1.5' r='1' fill='%23000'/%3E%3C/svg%3E"); /* @kind other */
+--image-filter:grayscale(1) contrast(1.12); /* @kind other */
+--image-filter-hard:grayscale(1) contrast(1.6) brightness(1.05) /* @kind other */}
+
+</style>
 <style>
 @font-face{font-family:"Geist";src:url("assets/fonts/Geist.woff2") format("woff2-variations"),url("assets/fonts/Geist.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
 </style>
