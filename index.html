@@ -534,7 +534,7 @@ reelCursor.style.left=e.clientX+'px';reelCursor.style.top=e.clientY+'px';
 });
 reel.addEventListener('mouseleave',()=>reelCursor.classList.remove('show'));
 reel.addEventListener('click',e=>{
-if(e.target.closest('#reelBtn')||e.target.closest('#creditBtn')||e.target.closest('.credit'))return;
+if(e.target.closest('#reelBtn')||e.target.closest('#creditBtn')||e.target.closest('.credit')||e.target.closest('.li-btn'))return;
 cursorIcon.setAttribute('d',vid.paused?PLAY_PATH:PAUSE_PATH);
 reelCursor.classList.add('show');
 reelCursor.style.transform='translate(-50%,-50%) scale(1.05)';
