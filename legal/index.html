@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — tronkilu.studio</title>
-<meta name="description" content="Privacy policy for tronkilu.studio, the site of Ergi Shkëlzeni, visual designer and illustrator.">
+<title>Legal notice — tronkilu.studio</title>
+<meta name="description" content="Legal notice for tronkilu.studio, the site of Ergi Shkëlzeni, visual designer and illustrator based in Grenoble, France.">
 <meta name="robots" content="index,follow">
-<link rel="canonical" href="https://tronkilu.studio/privacy/">
+<link rel="canonical" href="https://tronkilu.studio/legal/">
 <style>
 :root{
 /* Ink — the only real colour in the system */
@@ -88,6 +88,19 @@ h2{margin-bottom:24px}
 .site-foot .legal-links a{font-size:14px;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
 .site-foot .legal-links a:hover{text-decoration:none}
 @media(max-width:860px){.site-foot{padding-left:32px;padding-right:32px}}
+.val{color:var(--ink-900)}
+@keyframes valPulse{0%{color:var(--ink-900)}12%{color:var(--ink-300,#b4b4b4)}100%{color:var(--ink-900)}}
+.val.flash{animation:valPulse 1400ms cubic-bezier(.33,0,.15,1)}
+.copy{font:inherit;color:inherit;background:none;border:0;border-radius:3px;padding:3px;margin-left:4px;cursor:pointer;display:inline-flex;align-items:center;gap:0;vertical-align:-3px;line-height:0;position:relative;transition:background 200ms cubic-bezier(.2,0,0,1)}
+.copy:hover{background:var(--ink-050,#F2F2F1)}
+.copy:active{background:var(--ink-100,#E8E8E8)}
+.copy svg{width:15px;height:15px;flex:none;display:block;transition:opacity 180ms cubic-bezier(.2,0,0,1),transform 220ms cubic-bezier(.2,0,0,1)}
+.copy .ic-done{position:absolute;top:3px;left:3px;opacity:0;transform:scale(.6)}
+.copy.done .ic-copy{opacity:0;transform:scale(.6)}
+.copy.done .ic-done{opacity:1;transform:scale(1)}
+.copy .copy-label{position:absolute;left:50%;bottom:calc(100% + 6px);transform:translate(-50%,3px);font-family:Geist,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:-.01em;line-height:1;white-space:nowrap;background:var(--ink-900);color:var(--paper);padding:4px 6px;opacity:0;pointer-events:none;transition:opacity 180ms cubic-bezier(.2,0,0,1),transform 180ms cubic-bezier(.2,0,0,1)}
+.copy.done .copy-label{opacity:1;transform:translate(-50%,0)}
+.copy:focus-visible{outline:1px solid var(--ink-900);outline-offset:2px}
 h2{margin-bottom:8px}
 @media(max-width:860px){
 .layout{padding-left:0}
@@ -101,23 +114,13 @@ h2{margin-bottom:8px}
 <div class="layout">
 <main>
 <div class="body">
-<h1 id="privacyH1" style="margin-bottom:32px"></h1>
-<p class="bio" id="privacyIntro"></p>
+<h1 id="legalH1" style="margin-bottom:32px"></h1>
+<p class="bio" id="legalIntro"></p>
 <section>
-<h2 id="s2h"></h2>
-<p class="bio" id="s2p"></p>
+<p class="bio" id="l1p"></p>
 </section>
 <section>
-<h2 id="s3h"></h2>
-<p class="bio" id="s3p"></p>
-</section>
-<section>
-<h2 id="s4h"></h2>
-<p class="bio" id="s4p"></p>
-</section>
-<section>
-<h2 id="s5h"></h2>
-<p class="bio" id="s5p"></p>
+<p class="bio" id="l3p"></p>
 </section>
 <hr style="margin:56px 0 14px;border:0;border-top:1px solid var(--ink-900)">
 <p class="bio" id="lastUpdated" style="font-size:16px"></p>
@@ -129,23 +132,20 @@ h2{margin-bottom:8px}
 const I18N={
 copyrightLine:{en:"\u00a9 2026 Tronkilu Studio. All rights reserved.",fr:"\u00a9 2026 Tronkilu Studio. Tous droits r\u00e9serv\u00e9s.",al:"\u00a9 2026 Tronkilu Studio. T\u00eb gjitha t\u00eb drejtat e rezervuara."},
 
-privacyH1:{en:"Privacy Policy",fr:"Politique de confidentialit\u00e9",al:"Politika e privat\u00ebsis\u00eb"},
-privacyIntro:{en:'This Privacy Policy explains how tronkilu.studio collects, uses, stores and protects personal data in accordance with the GDPR. The site is hosted on <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>.',fr:'La pr\u00e9sente politique de confidentialit\u00e9 d\u00e9crit la mani\u00e8re dont tronkilu.studio collecte, utilise, conserve et prot\u00e8ge les donn\u00e9es \u00e0 caract\u00e8re personnel, conform\u00e9ment au RGPD. Le site est h\u00e9berg\u00e9 par <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>.',al:'Kjo politik\u00eb privat\u00ebsie shpjegon se si tronkilu.studio i mbledh, p\u00ebrdor, ruan dhe mbron t\u00eb dh\u00ebnat personale, n\u00eb p\u00ebrputhje me GDPR-n\u00eb. Faqja hostohet te <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>.'},
-s2h:{en:"How your data is used",fr:"Utilisation de vos donn\u00e9es",al:"Si p\u00ebrdoren t\u00eb dh\u00ebnat tuaja"},
-s2p:{en:'This site is a static site served over HTTPS, so all traffic is encrypted. It does not use analytics, cookies, or tracking. If you use the contact form, you consent to send your email address and message through <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>, a third-party form service, which forwards them to my Proton Mail account. This data is used only to reply to you and is never sold, shared, or added to a mailing list.',fr:'Ce site est un site statique servi en HTTPS : l\'ensemble du trafic est donc chiffr\u00e9. Il n\'utilise ni outils de mesure d\'audience, ni cookies, ni traceurs. Si vous utilisez le formulaire de contact, vous consentez \u00e0 transmettre votre adresse \u00e9lectronique et votre message via <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>, un prestataire tiers de formulaires, qui les achemine vers mon compte Proton Mail. Ces donn\u00e9es servent uniquement \u00e0 vous r\u00e9pondre ; elles ne sont ni vendues, ni communiqu\u00e9es \u00e0 des tiers, ni ajout\u00e9es \u00e0 une liste de diffusion.',al:'Kjo faqe \u00ebsht\u00eb statike dhe sh\u00ebrbehet p\u00ebrmes HTTPS-s\u00eb, pra i gjith\u00eb trafiku \u00ebsht\u00eb i enkriptuar. Nuk p\u00ebrdor analitika, cookie-t apo gjurmues. N\u00ebse p\u00ebrdorni formularin e kontaktit, jepni p\u00eblqimin q\u00eb adresa juaj e email-it dhe mesazhi t\u00eb d\u00ebrgohen p\u00ebrmes <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>, nj\u00eb sh\u00ebrbimi t\u00eb pal\u00ebs s\u00eb tret\u00eb p\u00ebr formular\u00eb, i cili i p\u00ebrcjell te llogaria ime n\u00eb Proton Mail. K\u00ebto t\u00eb dh\u00ebna p\u00ebrdoren vet\u00ebm p\u00ebr t\'ju kthyer p\u00ebrgjigje dhe nuk shiten, nuk u jepen t\u00eb tjer\u00ebve dhe nuk shtohen n\u00eb asnj\u00eb list\u00eb postare.'},
-s3h:{en:"Retention",fr:"Dur\u00e9e de conservation",al:"Ruajtja e t\u00eb dh\u00ebnave"},
-s3p:{en:"Messages are kept only as long as needed to respond, and are deleted once no longer relevant.",fr:"Les messages ne sont conserv\u00e9s que le temps n\u00e9cessaire pour y r\u00e9pondre, puis sont supprim\u00e9s d\u00e8s qu\'ils ne sont plus utiles.",al:"Mesazhet ruhen vet\u00ebm p\u00ebr aq koh\u00eb sa duhet p\u00ebr t\'ju kthyer p\u00ebrgjigje dhe fshihen sapo nuk jan\u00eb m\u00eb t\u00eb nevojshme."},
-s4h:{en:"Your rights",fr:"Vos droits",al:"T\u00eb drejtat tuaja"},
-s4p:{en:'Under the GDPR you can request access to, correction of, or deletion of your data through the contact form. You can also lodge a complaint with the <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener">CNIL</a>, the French supervisory authority.',fr:'Conform\u00e9ment au RGPD, vous pouvez demander l\'acc\u00e8s \u00e0 vos donn\u00e9es, leur rectification ou leur effacement en passant par le formulaire de contact. Vous pouvez \u00e9galement introduire une r\u00e9clamation aupr\u00e8s de la <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener">CNIL</a>, l\'autorit\u00e9 de contr\u00f4le fran\u00e7aise.',al:'N\u00eb baz\u00eb t\u00eb GDPR-s\u00eb, mund t\u00eb k\u00ebrkoni akses n\u00eb t\u00eb dh\u00ebnat tuaja, korrigjimin ose fshirjen e tyre p\u00ebrmes formularit t\u00eb kontaktit. Gjithashtu mund t\u00eb paraqisni ankes\u00eb pran\u00eb <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener">CNIL</a>-it, autoritetit mbik\u00ebqyr\u00ebs francez.'},
-s5h:{en:"Amendments",fr:"Modifications de la politique",al:"Ndryshimet e kësaj politike"},
-s5p:{en:"This policy may change to reflect updates to the site or the law.",fr:"La pr\u00e9sente politique peut \u00eatre modifi\u00e9e afin de tenir compte des \u00e9volutions du site ou de la r\u00e9glementation.",al:"Kjo politik\u00eb mund t\u00eb ndryshoj\u00eb p\u00ebr t\u00eb pasqyruar p\u00ebrdit\u00ebsime t\u00eb faqes ose ndryshime n\u00eb legjislacion."},
-lastUpdated:{en:"Last updated: 20 September 2026",fr:"Derni\u00e8re mise \u00e0 jour\u00a0: 20 septembre 2026",al:"P\u00ebrdit\u00ebsuar m\u00eb 20 shtator 2026"}
+legalH1:{en:"Legal notice",fr:"Mentions l\u00e9gales",al:"Sh\u00ebnime ligjore"},
+legalIntro:{en:"Information required under French law, in particular article 6 III of the Law for Confidence in the Digital Economy (LCEN) of 21 June 2004.",fr:"Informations requises par la loi fran\u00e7aise, notamment l\'article 6 III de la loi pour la confiance dans l\'\u00e9conomie num\u00e9rique (LCEN) du 21 juin 2004.",al:"Informacione t\u00eb k\u00ebrkuara nga legjislacioni francez, n\u00eb ve\u00e7anti nga neni 6 III i ligjit p\u00ebr besimin n\u00eb ekonomin\u00eb dixhitale (LCEN) i 21 qershorit 2004."},
+l1p:{en:'Tronkilu Studio, run by Ergi Shk\u00eblzeni, Grenoble, France.<br>SIREN: <span class="val">944\u00a0113\u00a0968</span> <button type="button" class="copy" data-copy="944113968" aria-label="Copy"><svg class="ic-copy" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7.25" y="7.25" width="9.5" height="9.5" rx="2"></rect><path d="M12.75 4.25a1.5 1.5 0 0 0-1.5-1.5h-7a1.5 1.5 0 0 0-1.5 1.5v7a1.5 1.5 0 0 0 1.5 1.5"></path></svg><svg class="ic-done" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span class="copy-label"></span></button> \u00b7 SIRET: <span class="val">944\u00a0113\u00a0968\u00a000019</span> <button type="button" class="copy" data-copy="94411396800019" aria-label="Copy"><svg class="ic-copy" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7.25" y="7.25" width="9.5" height="9.5" rx="2"></rect><path d="M12.75 4.25a1.5 1.5 0 0 0-1.5-1.5h-7a1.5 1.5 0 0 0-1.5 1.5v7a1.5 1.5 0 0 0 1.5 1.5"></path></svg><svg class="ic-done" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span class="copy-label"></span></button><br>Email: <span class="val">hi@tronkilu.studio</span> <button type="button" class="copy" data-copy="hi@tronkilu.studio" aria-label="Copy"><svg class="ic-copy" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7.25" y="7.25" width="9.5" height="9.5" rx="2"></rect><path d="M12.75 4.25a1.5 1.5 0 0 0-1.5-1.5h-7a1.5 1.5 0 0 0-1.5 1.5v7a1.5 1.5 0 0 0 1.5 1.5"></path></svg><svg class="ic-done" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span class="copy-label"></span></button>',fr:'Tronkilu Studio, exploit\u00e9 par Ergi Shk\u00eblzeni, Grenoble, France.<br>SIREN\u00a0: <span class="val">944\u00a0113\u00a0968</span> <button type="button" class="copy" data-copy="944113968" aria-label="Copy"><svg class="ic-copy" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7.25" y="7.25" width="9.5" height="9.5" rx="2"></rect><path d="M12.75 4.25a1.5 1.5 0 0 0-1.5-1.5h-7a1.5 1.5 0 0 0-1.5 1.5v7a1.5 1.5 0 0 0 1.5 1.5"></path></svg><svg class="ic-done" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span class="copy-label"></span></button> \u00b7 SIRET\u00a0: <span class="val">944\u00a0113\u00a0968\u00a000019</span> <button type="button" class="copy" data-copy="94411396800019" aria-label="Copy"><svg class="ic-copy" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7.25" y="7.25" width="9.5" height="9.5" rx="2"></rect><path d="M12.75 4.25a1.5 1.5 0 0 0-1.5-1.5h-7a1.5 1.5 0 0 0-1.5 1.5v7a1.5 1.5 0 0 0 1.5 1.5"></path></svg><svg class="ic-done" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span class="copy-label"></span></button><br>E-mail\u00a0: <span class="val">hi@tronkilu.studio</span> <button type="button" class="copy" data-copy="hi@tronkilu.studio" aria-label="Copy"><svg class="ic-copy" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7.25" y="7.25" width="9.5" height="9.5" rx="2"></rect><path d="M12.75 4.25a1.5 1.5 0 0 0-1.5-1.5h-7a1.5 1.5 0 0 0-1.5 1.5v7a1.5 1.5 0 0 0 1.5 1.5"></path></svg><svg class="ic-done" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span class="copy-label"></span></button>',al:'Tronkilu Studio, i drejtuar nga Ergi Shk\u00eblzeni, Grenoble, Franc\u00eb.<br>SIREN: <span class="val">944\u00a0113\u00a0968</span> <button type="button" class="copy" data-copy="944113968" aria-label="Copy"><svg class="ic-copy" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7.25" y="7.25" width="9.5" height="9.5" rx="2"></rect><path d="M12.75 4.25a1.5 1.5 0 0 0-1.5-1.5h-7a1.5 1.5 0 0 0-1.5 1.5v7a1.5 1.5 0 0 0 1.5 1.5"></path></svg><svg class="ic-done" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span class="copy-label"></span></button> \u00b7 SIRET: <span class="val">944\u00a0113\u00a0968\u00a000019</span> <button type="button" class="copy" data-copy="94411396800019" aria-label="Copy"><svg class="ic-copy" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7.25" y="7.25" width="9.5" height="9.5" rx="2"></rect><path d="M12.75 4.25a1.5 1.5 0 0 0-1.5-1.5h-7a1.5 1.5 0 0 0-1.5 1.5v7a1.5 1.5 0 0 0 1.5 1.5"></path></svg><svg class="ic-done" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span class="copy-label"></span></button><br>Email: <span class="val">hi@tronkilu.studio</span> <button type="button" class="copy" data-copy="hi@tronkilu.studio" aria-label="Copy"><svg class="ic-copy" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7.25" y="7.25" width="9.5" height="9.5" rx="2"></rect><path d="M12.75 4.25a1.5 1.5 0 0 0-1.5-1.5h-7a1.5 1.5 0 0 0-1.5 1.5v7a1.5 1.5 0 0 0 1.5 1.5"></path></svg><svg class="ic-done" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span class="copy-label"></span></button>'},
+l3p:{en:'The site is hosted on <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>, a service of GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States.',fr:'Le site est h\u00e9berg\u00e9 par <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>, service de GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, \u00c9tats-Unis.',al:'Faqja hostohet te <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>, sh\u00ebrbim i GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, Shtetet e Bashkuara.'},
+lastUpdated:{en:"Last updated: 21 September 2026",fr:"Derni\u00e8re mise \u00e0 jour\u00a0: 21 septembre 2026",al:"P\u00ebrdit\u00ebsuar m\u00eb 21 shtator 2026"}
 };
 const langBtns=document.querySelectorAll('.lang button');
 function setLang(l){document.documentElement.lang=l==='al'?'sq':l;langBtns.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===l)));try{localStorage.setItem('tronkilu-lang',l)}catch(e){}Object.entries(I18N).forEach(([id,v])=>{const el=document.getElementById(id);if(el)el.innerHTML=v[l]})}
 langBtns.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
 let saved=null;try{saved=localStorage.getItem('tronkilu-lang')}catch(e){}
 setLang(saved||'en');
+const COPIED={en:"Copied",fr:"Copi\u00e9",al:"Kopjuar"};
+function legacyCopy(v){const t=document.createElement('textarea');t.value=v;t.setAttribute('readonly','');t.style.cssText='position:fixed;top:0;left:-9999px';document.body.appendChild(t);t.select();t.setSelectionRange(0,t.value.length);let ok=false;try{ok=document.execCommand('copy')}catch(e){}t.remove();return ok}
+document.addEventListener('click',function(e){const b=e.target.closest('.copy');if(!b)return;const v=b.dataset.copy;const lg=document.documentElement.lang==='sq'?'al':document.documentElement.lang;const lab=b.querySelector('.copy-label');if(lab)lab.textContent=COPIED[lg]||COPIED.en;b.classList.add('done');var val=b.previousElementSibling;if(val&&val.classList.contains('val')){val.classList.remove('flash');void val.offsetWidth;val.classList.add('flash')}clearTimeout(b._t);b._t=setTimeout(function(){b.classList.remove('done')},1500);if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).catch(function(){legacyCopy(v)})}else{legacyCopy(v)}});
 </script>
 </body>
 </html>
