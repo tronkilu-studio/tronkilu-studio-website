@@ -1,15 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url>
-<loc>https://tronkilu.studio/</loc>
-<lastmod>2026-09-22</lastmod>
+<loc>https://tronkilu.studio/en/</loc>
+<lastmod>2026-09-25</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1.0</priority>
-<xhtml:link rel="alternate" hreflang="en" href="https://tronkilu.studio/"/>
-<xhtml:link rel="alternate" hreflang="fr" href="https://tronkilu.studio/"/>
-<xhtml:link rel="alternate" hreflang="sq" href="https://tronkilu.studio/"/>
+<xhtml:link rel="alternate" hreflang="en" href="https://tronkilu.studio/en/"/>
+<xhtml:link rel="alternate" hreflang="fr" href="https://tronkilu.studio/fr/"/>
+<xhtml:link rel="alternate" hreflang="sq" href="https://tronkilu.studio/al/"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://tronkilu.studio/en/"/>
 <image:image><image:loc>https://tronkilu.studio/assets/share.png</image:loc><image:title>Ergi Shkëlzeni — visual designer and illustrator</image:title></image:image>
 </url>
-<url><loc>https://tronkilu.studio/legal/</loc><lastmod>2026-09-22</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-<url><loc>https://tronkilu.studio/privacy/</loc><lastmod>2026-09-22</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+<url>
+<loc>https://tronkilu.studio/fr/</loc>
+<lastmod>2026-09-25</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+<xhtml:link rel="alternate" hreflang="en" href="https://tronkilu.studio/en/"/>
+<xhtml:link rel="alternate" hreflang="fr" href="https://tronkilu.studio/fr/"/>
+<xhtml:link rel="alternate" hreflang="sq" href="https://tronkilu.studio/al/"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://tronkilu.studio/en/"/>
+<image:image><image:loc>https://tronkilu.studio/assets/share.png</image:loc><image:title>Ergi Shkëlzeni — visual designer and illustrator</image:title></image:image>
+</url>
+<url>
+<loc>https://tronkilu.studio/al/</loc>
+<lastmod>2026-09-25</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+<xhtml:link rel="alternate" hreflang="en" href="https://tronkilu.studio/en/"/>
+<xhtml:link rel="alternate" hreflang="fr" href="https://tronkilu.studio/fr/"/>
+<xhtml:link rel="alternate" hreflang="sq" href="https://tronkilu.studio/al/"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://tronkilu.studio/en/"/>
+<image:image><image:loc>https://tronkilu.studio/assets/share.png</image:loc><image:title>Ergi Shkëlzeni — visual designer and illustrator</image:title></image:image>
+</url>
+<url>
+<loc>https://tronkilu.studio/en/legal/</loc>
+<lastmod>2026-09-25</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.3</priority>
+<xhtml:link rel="alternate" hreflang="en" href="https://tronkilu.studio/en/legal/"/>
+<xhtml:link rel="alternate" hreflang="fr" href="https://tronkilu.studio/fr/legal/"/>
+<xhtml:link rel="alternate" hreflang="sq" href="https://tronkilu.studio/al/legal/"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://tronkilu.studio/en/legal/"/>
+</url>
+<url>
+<loc>https://tronkilu.studio/fr/legal/</loc>
+<lastmod>2026-09-25</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.3</priority>
+<xhtml:link rel="alternate" hreflang="en" href="https://tronkilu.studio/en/legal/"/>
+<xhtml:link rel="alternate" hreflang="fr" href="https://tronkilu.studio/fr/legal/"/>
+<xhtml:link rel="alternate" hreflang="sq" href="https://tronkilu.studio/al/legal/"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://tronkilu.studio/en/legal/"/>
+</url>
+<url>
+<loc>https://tronkilu.studio/al/legal/</loc>
+<lastmod>2026-09-25</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.3</priority>
+<xhtml:link rel="alternate" hreflang="en" href="https://tronkilu.studio/en/legal/"/>
+<xhtml:link rel="alternate" hreflang="fr" href="https://tronkilu.studio/fr/legal/"/>
+<xhtml:link rel="alternate" hreflang="sq" href="https://tronkilu.studio/al/legal/"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://tronkilu.studio/en/legal/"/>
+</url>
+<url>
+<loc>https://tronkilu.studio/en/privacy/</loc>
+<lastmod>2026-09-25</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.3</priority>
+<xhtml:link rel="alternate" hreflang="en" href="https://tronkilu.studio/en/privacy/"/>
+<xhtml:link rel="alternate" hreflang="fr" href="https://tronkilu.studio/fr/privacy/"/>
+<xhtml:link rel="alternate" hreflang="sq" href="https://tronkilu.studio/al/privacy/"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://tronkilu.studio/en/privacy/"/>
+</url>
+<url>
+<loc>https://tronkilu.studio/fr/privacy/</loc>
+<lastmod>2026-09-25</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.3</priority>
+<xhtml:link rel="alternate" hreflang="en" href="https://tronkilu.studio/en/privacy/"/>
+<xhtml:link rel="alternate" hreflang="fr" href="https://tronkilu.studio/fr/privacy/"/>
+<xhtml:link rel="alternate" hreflang="sq" href="https://tronkilu.studio/al/privacy/"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://tronkilu.studio/en/privacy/"/>
+</url>
+<url>
+<loc>https://tronkilu.studio/al/privacy/</loc>
+<lastmod>2026-09-25</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.3</priority>
+<xhtml:link rel="alternate" hreflang="en" href="https://tronkilu.studio/en/privacy/"/>
+<xhtml:link rel="alternate" hreflang="fr" href="https://tronkilu.studio/fr/privacy/"/>
+<xhtml:link rel="alternate" hreflang="sq" href="https://tronkilu.studio/al/privacy/"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://tronkilu.studio/en/privacy/"/>
+</url>
 </urlset>
