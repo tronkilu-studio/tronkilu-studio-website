@@ -99,6 +99,7 @@ p{max-width:58ch;margin:0}
 /* sidebar overlaid on the hero, inverting against whatever is behind it */
 .rail{position:fixed;top:0;left:0;width:280px;height:100vh;color:#fff;mix-blend-mode:difference;padding:88px 24px 24px;display:flex;flex-direction:column;gap:clamp(16px,4vh,48px);z-index:20;pointer-events:none;overflow-y:auto;overflow-x:hidden;scrollbar-width:none}
 .rail::-webkit-scrollbar{display:none}
+.rail.solid{color:var(--ink-900);mix-blend-mode:normal}
 @media(max-height:700px){.rail{padding-top:64px}.rail nav a{font-size:18px}}
 .rail a{color:inherit;pointer-events:auto}
 .rail nav{display:flex;flex-direction:column;gap:4px}
@@ -612,7 +613,7 @@ const liBtn=document.querySelector('.reel .li-btn');
 function railVisibility(){
 const pastHero=window.scrollY>reel.offsetHeight*0.3;
 const mobileHide=window.innerWidth<=860&&pastHero;
-railEl.classList.toggle('hide',window.innerWidth>860?false:mobileHide);
+railEl.classList.toggle('hide',window.innerWidth>860?false:mobileHide);railEl.classList.toggle('solid',pastHero);
 btn.classList.toggle('hide',pastHero);
 creditBtn.classList.toggle('hide',pastHero);
 liBtn.classList.toggle('hide',pastHero);

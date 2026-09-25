@@ -1,6 +1,6 @@
 # tronkilu.studio
 
-Personal site of Ergi Shkëlzeni, visual designer and illustrator based in Grenoble, France.
+Portfolio site of Ergi Shkëlzeni — visual designer and illustrator based in Grenoble, France.
 
 Static HTML, CSS and vanilla JavaScript. No build step, no frameworks, no trackers, no cookies. Served over HTTPS on GitHub Pages.
 
