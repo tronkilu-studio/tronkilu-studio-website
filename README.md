@@ -14,7 +14,7 @@ en/ fr/ al/             One folder per language
   legal/index.html      Legal notice
 privacy/ legal/         Redirects to the language version
 404.html                Not found page
-assets/fonts/           Geist (variable)
+assets/fonts/           Archivo (variable, self-hosted)
 assets/video/           Hero video
 assets/                 Favicons, share image
 sitemap.xml robots.txt  Search engines
