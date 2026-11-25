@@ -142,8 +142,8 @@ section::after{content:"";display:block;border-top:1px solid var(--ink-900);marg
 .reel::after{content:"";position:absolute;inset:0;background-image:var(--grain-url);background-size:var(--grain-size);mix-blend-mode:multiply;opacity:var(--grain-opacity-strong);pointer-events:none}
 .reel button{position:absolute;bottom:24px;right:24px;z-index:2;border:0;padding:0;width:20px;height:20px;background:var(--paper);-webkit-mask:var(--i) center/contain no-repeat;mask:var(--i) center/contain no-repeat;cursor:pointer;mix-blend-mode:difference;transition:opacity 200ms cubic-bezier(.2,0,0,1)}
 .reel button.hide{opacity:0;pointer-events:none}
-.reel .li-btn{transition:opacity 200ms cubic-bezier(.2,0,0,1)}
-.reel .li-btn.hide{opacity:0;pointer-events:none}
+.reel .li-btn,.reel .ura-btn,.reel .ig-btn,.reel .sp-btn{transition:opacity 200ms cubic-bezier(.2,0,0,1)}
+.reel .li-btn.hide,.reel .ura-btn.hide,.reel .ig-btn.hide,.reel .sp-btn.hide{opacity:0;pointer-events:none}
 .reel button:focus-visible{outline:2px solid var(--paper);outline-offset:2px}
 .reel .credit-toggle{right:52px;width:18px;height:18px;background:var(--paper);-webkit-mask:var(--ci) center/contain no-repeat;mask:var(--ci) center/contain no-repeat;border:0;padding:0;cursor:pointer;mix-blend-mode:difference}
 .reel .credit{position:absolute;left:24px;right:24px;bottom:54px;z-index:2;font-size:13px;line-height:1.6;max-width:520px;margin-left:auto;text-align:right;opacity:0;transform:translateY(6px);pointer-events:none;transition:opacity 180ms cubic-bezier(.2,0,0,1),transform 180ms cubic-bezier(.2,0,0,1);text-wrap:balance}
@@ -618,14 +618,14 @@ if(!topbarLang.classList.contains('expanded')){topbarLang.classList.add('expande
 setTimeout(()=>topbarLang.classList.remove('expanded'),150);
 });
 const railEl=document.querySelector('.rail');
-const liBtn=document.querySelector('.reel .li-btn');
+const heroIcons=[btn,creditBtn,...document.querySelectorAll('.reel .li-btn,.reel .ura-btn,.reel .ig-btn,.reel .sp-btn')];
+const HERO_ICON_FADE=0.5; /* fraction of hero height scrolled before the hero icons fade */
 function railVisibility(){
 const pastHero=window.scrollY>reel.offsetHeight*0.3;
+const fadeIcons=window.scrollY>reel.offsetHeight*HERO_ICON_FADE;
 const mobileHide=window.innerWidth<=860&&pastHero;
 railEl.classList.toggle('hide',window.innerWidth>860?false:mobileHide);railEl.classList.toggle('solid',pastHero);
-btn.classList.toggle('hide',pastHero);
-creditBtn.classList.toggle('hide',pastHero);
-liBtn.classList.toggle('hide',pastHero);
+heroIcons.forEach(el=>el.classList.toggle('hide',fadeIcons));
 }
 addEventListener('scroll',railVisibility,{passive:true});addEventListener('resize',railVisibility);railVisibility();
 const bar=document.getElementById('topbar');
